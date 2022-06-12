@@ -1,0 +1,53 @@
+.experts{
+    background-image: url("../../img/Wave_White_bottom_right_shape_01.png");
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: $color-violet;
+    padding-top: $pd-16;
+    .col{
+        padding:0 20px;
+        &:hover{
+            .card{
+                box-shadow:0 30px 30px -10px $color-black3;
+            }
+        } 
+        .card{
+            border-radius: $bd-4;
+            border: $bd-1;
+            text-align: center;
+            transition: all 0.5s;
+            .card_img{
+                overflow: hidden;
+                border-top-left-radius: $bd-4;
+                    border-top-right-radius: $bd-4;
+                img{
+                    
+                    transition: all 0.5s;
+                    &:hover{
+                        transform: scale3d(1.05,1.05,1.05);
+                    }
+                };
+            }
+            p{
+                &:first-of-type{
+                    @include styleText($fs-2, $fw-3, $color-pink);
+                    font-family: $ff;
+                    margin-bottom: $mg-3;
+                }
+                &:last-of-type{
+                    margin-bottom: 1em;
+                }
+            };
+            h4{
+                font-family: $ff;
+                line-height: 1.2;
+                padding-bottom: $pd-17;
+                @include styleText($fs-8, $fw-4, $color-black1)
+            }
+        }
+    }
+    .top{
+        margin-bottom: 40px !important;
+    }
+}

@@ -1,0 +1,18 @@
+@mixin styleText($fs, $fw, $color) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+}
+
+@mixin styleBTN($py, $px, $bg, $bd) {
+    padding: $py $px;
+    background: $bg;
+    border: $bd;
+    border-radius: $bd-2;
+}
+
+@mixin styleBTNHover($bg, $bd,$color) {
+    background: $bg;
+    border: $bd;
+    color: $color;
+}
