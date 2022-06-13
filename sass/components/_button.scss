@@ -1,16 +1,50 @@
 .nav_btn {
-    @include styleBTN($pd-13, $pd-14, $color-pink, $bd-1);
-    @include styleText($fs-5, $fw-2,$color-white);
-    margin: $mg-1;
-    line-height: 1;
-    transition: all 300ms ease;
+  @include styleBTN($pd-13, $pd-14, $color-white, $bd-1);
+  @include styleText($fs-5, $fw-2, $color-white);
+  margin: $mg-1;
+  line-height: 1;
+  box-shadow: 0 0 0 3em #b61984 inset;
+  transition: all 500ms ease;
 
+  .dripicons {
+    margin-right: 6px;
+  }
+  &:hover,
+  &:focus {
+    @include styleBTNHover($color-white, $bd-1, $color-white);
+    @include styleText($fs-5, $fw-2, $color-pink);
+    box-shadow: 0 0 0 1px #b61984 inset;
+  }
+}
 
-    .dripicons {
-        margin-right: 6px;
-    }
-    &:hover{
-        @include styleBTNHover($color-white, $bd-1, $color-pink);
-        box-shadow: 0 0 0 1px #b61984 inset;
-    }
+.findCourse_btn {
+  @include styleBTN($pd-14, $pd-19, $color-white, $bd-1);
+  @include styleText($fs-3, $fw-2, $color-white);
+  margin: $mg-6 0;
+  line-height: 1;
+  letter-spacing: 1px;
+  box-shadow: 0 0 0 3em $color-pink inset;
+  transition: all 300ms ease;
+  &:hover,
+  &:focus {
+    @include styleBTNHover($color-white, $bd-1, $color-white);
+    @include styleText($fs-3, $fw-2, $color-pink);
+    box-shadow: 0 0 0 1px $color-pink inset;
+  }
+}
+
+.footer_btn {
+  @include styleBTN($pd-14, $pd-19, $color-pink, $bd-1);
+  @include styleText($fs-3, $fw-2, $color-black2);
+  line-height: 1;
+  width: 100%;
+  letter-spacing: 1px;
+  box-shadow: 0 0 0 3em $color-white inset;
+  transition: all 300ms ease;
+  &:hover,
+  &:focus {
+    @include styleBTNHover($color-pink, $bd-1, $color-white);
+    @include styleText($fs-3, $fw-2, $color-white);
+    box-shadow: 0 0 0 1px $color-white inset;
+  }
 }

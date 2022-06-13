@@ -4,8 +4,9 @@
   box-sizing: border-box;
 }
 
-body, html {
-  font-family: 'Roboto', sans-serif;
+body,
+html {
+  font-family: "Roboto", sans-serif;
   line-height: 1.8em;
   font-size: 15px;
   font-weight: 400;
@@ -14,7 +15,7 @@ body, html {
 
 .nav_btn {
   padding: 1.1em 1.5em;
-  background: #b61984;
+  background: #ffffff;
   border: none;
   border-radius: 50px;
   font-size: 0.9rem;
@@ -22,18 +23,259 @@ body, html {
   color: #ffffff;
   margin: 6px;
   line-height: 1;
-  transition: all 300ms ease;
+  box-shadow: 0 0 0 3em #b61984 inset;
+  transition: all 500ms ease;
 }
 
 .nav_btn .dripicons {
   margin-right: 6px;
 }
 
-.nav_btn:hover {
+.nav_btn:hover, .nav_btn:focus {
   background: #ffffff;
   border: none;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 500;
   color: #b61984;
   box-shadow: 0 0 0 1px #b61984 inset;
+}
+
+.findCourse_btn {
+  padding: 1.5em 60px;
+  background: #ffffff;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.8em;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 30px 0;
+  line-height: 1;
+  letter-spacing: 1px;
+  box-shadow: 0 0 0 3em #b61984 inset;
+  transition: all 300ms ease;
+}
+
+.findCourse_btn:hover, .findCourse_btn:focus {
+  background: #ffffff;
+  border: none;
+  color: #ffffff;
+  font-size: 0.8em;
+  font-weight: 500;
+  color: #b61984;
+  box-shadow: 0 0 0 1px #b61984 inset;
+}
+
+.footer_btn {
+  padding: 1.5em 60px;
+  background: #b61984;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.8em;
+  font-weight: 500;
+  color: #181818;
+  line-height: 1;
+  width: 100%;
+  letter-spacing: 1px;
+  box-shadow: 0 0 0 3em #ffffff inset;
+  transition: all 300ms ease;
+}
+
+.footer_btn:hover, .footer_btn:focus {
+  background: #b61984;
+  border: none;
+  color: #ffffff;
+  font-size: 0.8em;
+  font-weight: 500;
+  color: #ffffff;
+  box-shadow: 0 0 0 1px #ffffff inset;
+}
+
+.findCourse_form {
+  padding: 0 20px;
+}
+
+.findCourse_form .findCourse_form-bg {
+  background-color: #ffffff;
+  box-shadow: 0 30px 30px -10px #00000033;
+  border-radius: 10px;
+  padding: 0 25px 30px;
+  /*the container must be positioned relative:*/
+  /*hide original SELECT element:*/
+  /*style the arrow inside the select element:*/
+  /*point the arrow upwards when the select box is open (active):*/
+  /*style the items (options), including the selected item:*/
+  /*style items (options):*/
+  /*hide the items when the select box is closed:*/
+}
+
+.findCourse_form .findCourse_form-bg h4 {
+  margin: 40px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #191919;
+}
+
+.findCourse_form .findCourse_form-bg form .findCourse_seclect,
+.findCourse_form .findCourse_form-bg form .findCourse_textarea,
+.findCourse_form .findCourse_form-bg form .name,
+.findCourse_form .findCourse_form-bg form .email {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.findCourse_form .findCourse_form-bg form i {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  color: #b61984;
+  z-index: 50;
+}
+
+.findCourse_form .findCourse_form-bg form .name,
+.findCourse_form .findCourse_form-bg form .email,
+.findCourse_form .findCourse_form-bg form .message,
+.findCourse_form .findCourse_form-bg form .language {
+  padding: 20px 20px 20px 42px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #181818;
+}
+
+.findCourse_form .findCourse_form-bg form .findCourse_seclect {
+  border: none;
+}
+
+.findCourse_form .findCourse_form-bg form .findCourse_seclect .language {
+  padding: 0 20px 0 36px;
+  height: 40px;
+}
+
+.findCourse_form .findCourse_form-bg form .findCourse_seclect i {
+  top: 7px;
+  left: 17px;
+}
+
+.findCourse_form .findCourse_form-bg form .findCourse_textarea {
+  border: none;
+}
+
+.findCourse_form .findCourse_form-bg form .findCourse_textarea .message {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 10px 20px 10px 42px;
+}
+
+.findCourse_form .findCourse_form-bg form .findCourse_textarea .message:focus-visible {
+  box-shadow: 0 0 4px 0 #0000001a;
+  border: 1px solid #0000004d !important;
+}
+
+.findCourse_form .findCourse_form-bg form .findCourse_textarea i {
+  top: 10px;
+  left: 17px;
+}
+
+.findCourse_form .findCourse_form-bg form .form-control:focus {
+  box-shadow: 0 0 4px 0 #0000001a;
+  border: 1px solid #0000004d;
+}
+
+.findCourse_form .findCourse_form-bg .findCourse_seclect {
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #181818;
+}
+
+.findCourse_form .findCourse_form-bg .findCourse_seclect i {
+  font-size: 15px;
+}
+
+.findCourse_form .findCourse_form-bg .findCourse_seclect .language:focus {
+  box-shadow: 0 0 4px 0 #0000001a;
+  border: 1px solid #0000004d;
+}
+
+.findCourse_form .findCourse_form-bg .findCourse_seclect select {
+  display: none;
+}
+
+.findCourse_form .findCourse_form-bg .select-selected {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 6px 36px 6px;
+}
+
+.findCourse_form .findCourse_form-bg .select-selected:after {
+  position: absolute;
+  content: "T";
+  font-family: "dripicons-v2";
+  top: 8px;
+  right: 15px;
+  color: #b61984;
+  opacity: 0.5;
+}
+
+.findCourse_form .findCourse_form-bg .select-selected.select-arrow-active:after {
+  position: absolute;
+  content: "W";
+  color: #b61984;
+}
+
+.findCourse_form .findCourse_form-bg .select-items div,
+.findCourse_form .findCourse_form-bg .select-selected {
+  color: #181818;
+  padding-left: 36px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 50px;
+}
+
+.findCourse_form .findCourse_form-bg .select-items {
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 4px 0 #0000001a;
+  border: 1px solid #00000010;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 60;
+}
+
+.findCourse_form .findCourse_form-bg .select-hide {
+  display: none;
+}
+
+.findCourse_form .findCourse_form-bg .select-items div:hover,
+.findCourse_form .findCourse_form-bg .same-as-selected {
+  color: #b61984;
+}
+
+.footer_input {
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  padding: 8px;
+  margin: 7.5px 0;
+  text-align: center;
+  background-color: #aa017e;
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.footer_input::placeholder {
+  color: #ffffff;
+}
+
+.footer_input:focus, .footer_input:focus-visible {
+  border: 1px solid white !important;
 }
 
 header {
@@ -179,29 +421,16 @@ header .navbar-light .navbar-nav .nav-link:hover {
 
 .findCourse {
   padding-top: 60px;
+  background-image: url("../img/accent_bottom_wave_01.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-bottom: -1px;
 }
 
 .findCourse .findCourse_img {
   padding: 0 40px;
-  margin-top: 60px;
-}
-
-.findCourse .findCourse_form {
-  padding: 0 20px;
-}
-
-.findCourse .findCourse_form .findCourse_form-bg {
-  box-shadow: 0 30px 30px -10px #00000033;
-  border-radius: 10px;
-  padding: 0 25px;
-}
-
-.findCourse .findCourse_form .findCourse_form-bg h4 {
-  margin: 40px 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #191919;
+  margin: 60px 0 30px 0;
 }
 
 header {
@@ -241,5 +470,103 @@ header .navbar-light .navbar-nav .nav-link {
 
 header .navbar-light .navbar-nav .nav-link:hover {
   color: #b61984;
+}
+
+footer {
+  padding: 120px 0;
+  background-image: url("../img/footer_background.jpg");
+  background-position: bottom center;
+  background-size: cover;
+}
+
+footer .container {
+  padding: 0;
+}
+
+footer .footerContact_icon {
+  margin-bottom: 80px;
+}
+
+footer .footer_contact,
+footer .footer_link,
+footer .footer_about,
+footer .footer_newsletter {
+  font-size: 0.9em;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+footer .footer_contact li,
+footer .footer_link li,
+footer .footer_about li,
+footer .footer_newsletter li {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer .footer_contact li:first-of-type,
+footer .footer_link li:first-of-type,
+footer .footer_about li:first-of-type,
+footer .footer_newsletter li:first-of-type {
+  padding: 0 0 12px 0;
+}
+
+footer .footer_contact a,
+footer .footer_link a,
+footer .footer_about a,
+footer .footer_newsletter a {
+  color: #ffffff;
+}
+
+footer .footer_contact a:hover,
+footer .footer_link a:hover,
+footer .footer_about a:hover,
+footer .footer_newsletter a:hover {
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+footer .footer_contact a:hover {
+  color: #181818;
+  opacity: 0.8;
+}
+
+footer .footer_newsletter {
+  padding-left: 40px;
+}
+
+footer .footer_about {
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+footer .footer_link {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+footer i {
+  margin-right: 12px;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+footer h5 {
+  margin-bottom: 25px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */

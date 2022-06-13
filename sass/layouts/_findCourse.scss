@@ -1,20 +1,12 @@
-.findCourse{
-    padding-top: $pd-9;
-    .findCourse_img{
-        padding: 0 $pd-18;
-        margin-top: $mg-5;
-    }
-    .findCourse_form{
-        padding: 0 $pd-3;
-        .findCourse_form-bg{
-            box-shadow: 0 30px 30px -10px $color-black3;
-            border-radius: $bd-4;
-            padding: 0 $pd-4;
-            h4{
-                margin: 40px 0;
-                font-family: $ff;
-                @include styleText($fs-9, $fw-4, $color-black1)
-            }
-        }
-    }
+.findCourse {
+  padding-top: $pd-9;
+  background-image: url("../img/accent_bottom_wave_01.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-bottom: $mg-7;
+  .findCourse_img {
+    padding: 0 $pd-18;
+    margin: $mg-5 0 $mg-6 0;
+  }
 }

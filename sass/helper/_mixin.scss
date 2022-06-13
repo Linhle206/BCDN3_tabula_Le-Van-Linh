@@ -11,7 +11,7 @@
     border-radius: $bd-2;
 }
 
-@mixin styleBTNHover($bg, $bd,$color) {
+@mixin styleBTNHover($bg, $bd, $color) {
     background: $bg;
     border: $bd;
     color: $color;

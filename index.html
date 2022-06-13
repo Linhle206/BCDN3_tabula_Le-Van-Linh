@@ -199,34 +199,76 @@
             </div>
             <div class="findCourse_form d-flex align-items-center">
                 <div class="findCourse_form-bg">
+                    <h4>Find Your Course</h4>
                     <form>
-                        <h4>Find Your Course</h4>
                         <div class="form-row">
                             <div class="col">
                                 <i class="dripicons dripicons-user"></i>
-                                <input type="text" class="form-control" placeholder="Name">
+                                <input id="IDName" type="text" class="name form-control" placeholder="Name">
                             </div>
                             <div class="col">
                                 <i class="dripicons dripicons-mail"></i>
-                                <input type="text" class="form-control" placeholder="Email">
+                                <input id="IDEmail" type="text" class="email form-control" placeholder="Email">
                             </div>
                         </div>
-                        <i class="dripicons dripicons-graduation"></i>
-                        <select class="w-100 " id="language">
-                            <option value="1">English</option>
-                            <option value="2">French</option>
-                            <option value="3">Spanish</option>
-                            <option value="4">German</option>
-                        </select>
-                        <i class="dripicons dripicons-message"></i>
-                        <textarea class="form-control" id="" cols="30" rows="3" placeholder="Message"></textarea>
-                        <button type="submit" class="btn">SEND</button>
+                        <div class="findCourse_seclect">
+                            <i class="dripicons dripicons-graduation"></i>           
+                            <select class="language w-100 " id="IDLanguage">
+                                <option value="1">English</option>
+                                <option value="2">French</option>
+                                <option value="3">Spanish</option>
+                                <option value="4">German</option>
+                            </select>
+                        </div>
+                        <div class="findCourse_textarea">
+                            <i class="dripicons dripicons-message"></i>
+                            <textarea class="message form-control" id="" cols="30" rows="4" placeholder="Message"></textarea>
+                        </div>
+                        <button type="button" class="findCourse_btn btn">SEND</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-    <footer></footer>
+    <footer>
+        <div class="container d-flex">
+            <div class="footer_contact w-25">
+                <h5>Contact us</h5>
+                <p><i class="dripicons dripicons-location"></i>Franklin St, Greenpoint Ave</p>
+                <p><i class="dripicons dripicons-phone"></i>+2342 5446 67</p>
+                <p><i class="dripicons dripicons-alarm"></i>Monday - Friday: 8 AM - 5 PM</p>
+                <div class="footerContact_icon">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer_link w-25">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Schedule</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer_about w-25">
+                <h5>About</h5>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Get Quote</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer_newsletter w-25">
+                <h5>Newsletter</h5>
+                <input type="email" class="footer_input" placeholder="Your email">
+                <button class="btn footer_btn">SUBSCRIBE</button>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -235,6 +277,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
+
+    <script src="./js/seclect.js"></script>
 </body>
 
 </html>
